@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HoaHongBanHang</title>
+</head>
+<body>
+<script>
+   let a = prompt("Nhập doanh số bán hàng: ");
+    if(a>200000){
+        if(a>500000){
+            aa = (19000 + (a-500000)*0.1);
+            alert('Số tiền hoa hồng  nhận về :' +aa)
+        }else {
+            bb = 4000 + (a-200000)*0.05;
+            alert('Số tiền hoa hồng  nhận về :' +bb)
+        }
+
+    }else {
+        cc = a*0.02
+        alert('Số tiền hoa hồng  nhận về :' +cc
+        )
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XepHangHocLuc</title>
+</head>
+<body>
+<h1>Xếp loại học sinh.</h1>
+<input type="number" placeholder="Nhập điểm kiểm tra" id="kiemtra">
+<input type="number" placeholder="Nhập giữa kì" id="giuaki">
+<input type="number" placeholder="Nhập cuối kì" id="cuoiki">
+<button onclick="demo()">Tính</button>
+<br><br>
+<input placeholder="Tổng điểm tb" id="ketqua">
+<input type="text" placeholder="Xếp loại" id="xeploai">
+<script>
+    function demo() {
+        let a = +document.getElementById('kiemtra').value;
+        let b = +document.getElementById('giuaki').value;
+        let c = +document.getElementById('cuoiki').value;
+        let d = (a + b * 2 + c * 3) / 6;
+        document.getElementById('ketqua').value = d;
+        if (d > 3.5) {
+            if (d > 5) {
+                if (d > 6.5) {
+                    if (d > 8) {
+                        document.getElementById('xeploai').value = 'Giỏi';
+                    } else {
+                        document.getElementById('xeploai').value = 'khá';
+                    }
+                } else {
+                    document.getElementById('xeploai').value = 'Trung bình';
+                }
+            } else {
+                document.getElementById('xeploai').value = 'Yếu';
+            }
+        } else {
+            document.getElementById('xeploai').value = 'Yếu';
+        }
+
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChisoBMI</title>
+</head>
+<body>
+<h1>Chỉ số BMI.</h1>
+<input type="number" id="cannang" placeholder="Nhập cân nặng">
+<input type="number" id="chieucao" placeholder="Nhập chiều cao">
+<input id="bmi" placeholder="BMI">
+<input id="tieuchuan" placeholder="Tiêu chuẩn"><br><br>
+<button onclick="demo()" style=" width: 100px">Tính</button>
+<script>
+    function demo(){
+
+        let a = +document.getElementById('cannang').value;
+        let b = +document.getElementById('chieucao').value;
+        let c = a / (b*b);
+        document.getElementById('bmi').value = c;
+        if(c<30){
+            if(c<25){
+                if(c<18){
+                    document.getElementById('tieuchuan').value = 'Thiếu Cân';
+                }else{
+                    document.getElementById('tieuchuan').value = 'Bình Thường';
+                }
+            }else{
+                document.getElementById('tieuchuan').value = 'Thừa Cân';
+            }
+        }else{
+            document.getElementById('tieuchuan').value = 'Béo phì';
+        }
+
+    }
+</script>
+</body>
+</html>

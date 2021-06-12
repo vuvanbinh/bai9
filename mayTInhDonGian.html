@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MayTinhDonGian</title>
+</head>
+<style>
+    input{
+        text-align: right;
+    }
+    .qq{
+        width: 271px;height: 40px;background-color: deepskyblue;
+    }
+    .q{
+        background-color: greenyellow;
+        width: 60px;height: 40px;
+        margin-right: 7px;
+        margin-bottom: 5px;
+    }
+</style>
+<body style="background-color:aliceblue">
+<h1>Máy tính đơn giản của Bình.</h1>
+<table border="3">
+    <tr>
+        <td colspan="4">
+            <input class="qq" type="text" id="number" name="number">
+        </td>
+    </tr>
+    <tr>
+        <td><button class="q" id="7" onclick="addNumber(this.id)">7</button></td>
+        <td><button class="q" id="8" onclick="addNumber(this.id)">8</button></td>
+        <td><button class="q" id="9" onclick="addNumber(this.id)">9</button></td>
+        <td><button class="q" id="cong" onclick="toan(this.id)">+</button></td>
+    </tr>
+    <tr>
+        <td><button class="q" id="4" onclick="addNumber(this.id)">4</button></td>
+        <td><button class="q" id="5" onclick="addNumber(this.id)">5</button></td>
+        <td><button class="q" id="6" onclick="addNumber(this.id)">6</button></td>
+        <td><button class="q" id="tru" onclick="toan(this.id)">-</button></td>
+    </tr>
+    <tr>
+        <td><button class="q" id="1" onclick="addNumber(this.id)">1</button></td>
+        <td><button class="q" id="2" onclick="addNumber(this.id)">2</button></td>
+        <td><button class="q" id="3" onclick="addNumber(this.id)">3</button></td>
+        <td><button class="q" id="nhan" onclick="toan(this.id)">X</button></td>
+    </tr>
+    <tr>
+        <td><button class="q" id="c" onclick="xoa()">CC</button></td>
+        <td><button class="q" id="0" onclick="addNumber(this.id)">0</button></td>
+        <td><button class="q" id="bang" onclick="ketqua()">=</button></td>
+        <td><button class="q" id="chia" onclick="toan(this.id)">/</button></td>
+    </tr>
+
+
+
+</table>
+</body>
+<script src="mayTinhDonGian.js"></script>
+</html>
